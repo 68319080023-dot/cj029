@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-bar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 1050;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.apply-btn {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.apply-btn:hover {
+    background: linear-gradient(135deg, #cc0000, #990000);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+}
+
+.phone-contact {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-contact:hover {
+    color: #fff;
+}
+
+.social-sidebar {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1040;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover {
+    transform: translateX(-5px) scale(1.1);
+    color: white;
+}
+
+.social-facebook {
+    background: linear-gradient(135deg, #1877F2, #42A5F5);
+}
+
+.social-youtube {
+    background: linear-gradient(135deg, #FF0000, #FF5722);
+}
+
+.social-tiktok {
+    background: linear-gradient(135deg, #000000, #333333);
+}
+
+.social-line {
+    background: linear-gradient(135deg, #00C300, #66D966);
+}
+
+.social-twitter {
+    background: linear-gradient(135deg, #1DA1F2, #42A5F5);
+}
+
+.social-instagram {
+    background: linear-gradient(135deg, #E4405F, #FCAF45);
+}
+
+.social-linkedin {
+    background: linear-gradient(135deg, #0077B5, #2E86AB);
+}
+
+.social-discord {
+    background: linear-gradient(135deg, #7289DA, #99AAB5);
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.carousel-item img {
+    height: calc(100vh - 76px);
+    object-fit: cover;
+}
+
+/* Services Section Styles */
+.services-section {
+    margin-top: 76px;
+}
+
+.service-item {
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.contact-buttons {
+    min-width: 150px;
+}
+
+.apply-btn-section {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.apply-btn-section:hover {
+    background: linear-gradient(135deg, #cc0000, #990000);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.phone-btn {
+    background: linear-gradient(135deg, #E91E63, #AD1457);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    font-size: 14px;
+}
+
+.phone-btn:hover {
+    background: linear-gradient(135deg, #AD1457, #880E4F);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Banner Cards */
+.banner-card {
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.campus-visit {
+    background: linear-gradient(135deg, #E91E63, #F06292);
+}
+
+.check-score {
+    background: linear-gradient(135deg, #26A69A, #80CBC4);
+}
+
+.online-info {
+    background: linear-gradient(135deg, #2196F3, #64B5F6);
+}
+
+.banner-content {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    line-height: 0.8;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.banner-subtitle {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.highlight {
+    background: white;
+    color: #2196F3;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+
+.banner-student {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.student-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.speech-bubble {
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    position: relative;
+    font-weight: 500;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 8px solid transparent;
+    border-right-color: #333;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.view-all-btn {
+    background: linear-gradient(135deg, #E91E63, #F06292);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: linear-gradient(135deg, #AD1457, #E91E63);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-bar {
+        position: static;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .social-sidebar {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+        transform: none;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .service-text {
+        font-size: 11px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-card {
+        height: 250px;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
